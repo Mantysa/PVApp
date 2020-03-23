@@ -1,0 +1,62 @@
+<%= form_with(model: pv_module, local: true) do |form| %>
+  <% if pv_module.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pv_module.errors.count, "error") %> prohibited this pv_module from being saved:</h2>
+
+      <ul>
+        <% pv_module.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :product_name %>
+    <%= form.text_field :product_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :producent_name %>
+    <%= form.text_field :producent_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nominal_power %>
+    <%= form.number_field :nominal_power %>
+  </div>
+
+  <div class="field">
+    <%= form.label :open_voltage %>
+    <%= form.text_field :open_voltage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mppt_voltage %>
+    <%= form.text_field :mppt_voltage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mppt_current %>
+    <%= form.text_field :mppt_current %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sc_current %>
+    <%= form.text_field :sc_current %>
+  </div>
+
+  <div class="field">
+    <%= form.label :i_coeff %>
+    <%= form.text_field :i_coeff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :u_coeff %>
+    <%= form.text_field :u_coeff %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

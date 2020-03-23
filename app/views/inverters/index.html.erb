@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inverters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product name</th>
+      <th>Producer name</th>
+      <th>Nominal power</th>
+      <th>Max voltage</th>
+      <th>Min voltage</th>
+      <th>Mppt max voltage</th>
+      <th>Mppt min voltage</th>
+      <th>Start voltage</th>
+      <th>Max current</th>
+      <th>Mppt count</th>
+      <th>Str count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inverters.each do |inverter| %>
+      <tr>
+        <td><%= inverter.product_name %></td>
+        <td><%= inverter.producer_name %></td>
+        <td><%= inverter.nominal_power %></td>
+        <td><%= inverter.max_voltage %></td>
+        <td><%= inverter.min_voltage %></td>
+        <td><%= inverter.mppt_max_voltage %></td>
+        <td><%= inverter.mppt_min_voltage %></td>
+        <td><%= inverter.start_voltage %></td>
+        <td><%= inverter.max_current %></td>
+        <td><%= inverter.mppt_count %></td>
+        <td><%= inverter.str_count %></td>
+        <td><%= link_to 'Show', inverter %></td>
+        <td><%= link_to 'Edit', edit_inverter_path(inverter) %></td>
+        <td><%= link_to 'Destroy', inverter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inverter', new_inverter_path %>

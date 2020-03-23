@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  producer_name: MyString
+  nominal_power: 9.99
+  max_voltage: 9.99
+  min_voltage: 9.99
+  mppt_max_voltage: 9.99
+  mppt_min_voltage: 9.99
+  start_voltage: 9.99
+  max_current: 9.99
+  mppt_count: 1
+  str_count: 1
+
+two:
+  product_name: MyString
+  producer_name: MyString
+  nominal_power: 9.99
+  max_voltage: 9.99
+  min_voltage: 9.99
+  mppt_max_voltage: 9.99
+  mppt_min_voltage: 9.99
+  start_voltage: 9.99
+  max_current: 9.99
+  mppt_count: 1
+  str_count: 1

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product name:</strong>
+  <%= @inverter.product_name %>
+</p>
+
+<p>
+  <strong>Producer name:</strong>
+  <%= @inverter.producer_name %>
+</p>
+
+<p>
+  <strong>Nominal power:</strong>
+  <%= @inverter.nominal_power %>
+</p>
+
+<p>
+  <strong>Max voltage:</strong>
+  <%= @inverter.max_voltage %>
+</p>
+
+<p>
+  <strong>Min voltage:</strong>
+  <%= @inverter.min_voltage %>
+</p>
+
+<p>
+  <strong>Mppt max voltage:</strong>
+  <%= @inverter.mppt_max_voltage %>
+</p>
+
+<p>
+  <strong>Mppt min voltage:</strong>
+  <%= @inverter.mppt_min_voltage %>
+</p>
+
+<p>
+  <strong>Start voltage:</strong>
+  <%= @inverter.start_voltage %>
+</p>
+
+<p>
+  <strong>Max current:</strong>
+  <%= @inverter.max_current %>
+</p>
+
+<p>
+  <strong>Mppt count:</strong>
+  <%= @inverter.mppt_count %>
+</p>
+
+<p>
+  <strong>Str count:</strong>
+  <%= @inverter.str_count %>
+</p>
+
+<%= link_to 'Edit', edit_inverter_path(@inverter) %> |
+<%= link_to 'Back', inverters_path %>

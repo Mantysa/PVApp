@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pv Modules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product name</th>
+      <th>Producent name</th>
+      <th>Nominal power</th>
+      <th>Open voltage</th>
+      <th>Mppt voltage</th>
+      <th>Mppt current</th>
+      <th>Sc current</th>
+      <th>I coeff</th>
+      <th>U coeff</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pv_modules.each do |pv_module| %>
+      <tr>
+        <td><%= pv_module.product_name %></td>
+        <td><%= pv_module.producent_name %></td>
+        <td><%= pv_module.nominal_power %></td>
+        <td><%= pv_module.open_voltage %></td>
+        <td><%= pv_module.mppt_voltage %></td>
+        <td><%= pv_module.mppt_current %></td>
+        <td><%= pv_module.sc_current %></td>
+        <td><%= pv_module.i_coeff %></td>
+        <td><%= pv_module.u_coeff %></td>
+        <td><%= link_to 'Show', pv_module %></td>
+        <td><%= link_to 'Edit', edit_pv_module_path(pv_module) %></td>
+        <td><%= link_to 'Destroy', pv_module, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pv Module', new_pv_module_path %>

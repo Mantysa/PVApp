@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  producent_name: MyString
+  nominal_power: 1
+  open_voltage: 9.99
+  mppt_voltage: 9.99
+  mppt_current: 9.99
+  sc_current: 9.99
+  i_coeff: 9.99
+  u_coeff: 9.99
+
+two:
+  product_name: MyString
+  producent_name: MyString
+  nominal_power: 1
+  open_voltage: 9.99
+  mppt_voltage: 9.99
+  mppt_current: 9.99
+  sc_current: 9.99
+  i_coeff: 9.99
+  u_coeff: 9.99

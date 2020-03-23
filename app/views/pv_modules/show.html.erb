@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product name:</strong>
+  <%= @pv_module.product_name %>
+</p>
+
+<p>
+  <strong>Producent name:</strong>
+  <%= @pv_module.producent_name %>
+</p>
+
+<p>
+  <strong>Nominal power:</strong>
+  <%= @pv_module.nominal_power %>
+</p>
+
+<p>
+  <strong>Open voltage:</strong>
+  <%= @pv_module.open_voltage %>
+</p>
+
+<p>
+  <strong>Mppt voltage:</strong>
+  <%= @pv_module.mppt_voltage %>
+</p>
+
+<p>
+  <strong>Mppt current:</strong>
+  <%= @pv_module.mppt_current %>
+</p>
+
+<p>
+  <strong>Sc current:</strong>
+  <%= @pv_module.sc_current %>
+</p>
+
+<p>
+  <strong>I coeff:</strong>
+  <%= @pv_module.i_coeff %>
+</p>
+
+<p>
+  <strong>U coeff:</strong>
+  <%= @pv_module.u_coeff %>
+</p>
+
+<%= link_to 'Edit', edit_pv_module_path(@pv_module) %> |
+<%= link_to 'Back', pv_modules_path %>
